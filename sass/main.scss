@@ -147,6 +147,15 @@
     padding-top: 120px;
     background-color:$bg-light;
     text-align: center;
+    overflow: hidden;
+    position: relative;
+    #tweet__content {
+        display: flex;
+        transition: all 1s;
+    }
+    &__item {
+        width: 100%;
+    }
     i {
         color: #56c7ee;
         font-size: 3.6rem;
@@ -175,7 +184,10 @@
         list-style-type: none;
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        // transform: translate(-50%, 0);
         li {
             width: 10px;
             height: 10px;
